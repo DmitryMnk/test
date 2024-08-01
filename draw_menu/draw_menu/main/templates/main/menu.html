@@ -1,0 +1,13 @@
+<ul>
+    {% for data in struct %}
+        <li class="{% if data.item.is_active %}active{% else %}deactive{% endif %}">
+            <a href="{{ data.item.url }}">{{data.item.title}}</a>
+            {% if data.children %}
+                <ul>
+                    {% include 'main/menu.html' with struct=data.children %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
