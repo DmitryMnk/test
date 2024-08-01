@@ -1,5 +1,5 @@
 # test
-ключи от админки:
-username: admin
+ключи от админки:  
+username: admin  
 pass: admin
 
